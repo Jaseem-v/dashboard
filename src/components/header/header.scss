@@ -1,0 +1,132 @@
+:root {
+    --Primary: #eb2f64;
+    --Primary-light: #ff3366;
+    --Primary-dark: #ba265d;
+
+    --Grey-light-1: #faf9f9;
+    --Grey-light-2: #f4f2f2;
+    --Grey-light-3: #f0eeee;
+    --Grey-light-4: #ccc;
+
+    --Grey-dark-1: #333;
+    --Grey-dark-2: #777;
+    --Grey-dark-3: #999;
+}
+
+.header {
+    width: 100%;
+    background: #fff;
+    flex: 1 0 15%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.15);
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+
+    & > * {
+        cursor: pointer;
+    }
+
+    &__menu-box {
+        // width: 7rem;
+        padding: 1rem;
+        i {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+    }
+
+    &__search-box {
+        display: flex;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__search {
+        padding: 0.5rem 2rem;
+        margin-right: -3.5rem;
+        width: 80%;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        transition: all 0.2s;
+        background: var(--Grey-light-2);
+        color: #333;
+
+        &:focus {
+            width: 100%;
+        }
+    }
+
+    &__search-icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: var(--Grey-dark-2);
+    }
+}
+
+.user-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    & > div:hover {
+        background: var(--Grey-light-4);
+    }
+
+    &__icon-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 1rem 2rem;
+        width: 8rem;
+        height: 100%;
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: var(--Grey-dark-2);
+    }
+
+    &__notification {
+        position: absolute;
+        background: var(--Primary);
+        color: #fff;
+        top: 1.2rem;
+        right: 1.9rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        // display: none;
+    }
+
+    &__user {
+        padding: 0.75rem 2rem;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+    }
+
+    &__user-photo {
+        border-radius: 50%;
+        width: 5rem;
+        margin-right: 0.5rem;
+    }
+}

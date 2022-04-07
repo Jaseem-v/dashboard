@@ -1,0 +1,97 @@
+/*=================================================*/
+/*                      Base                     */
+/*=================================================*/
+
+@import "./elegent_icons.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: currentColor;
+    }
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+body {
+    // font-family: "Jost", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    // overflow: hidden;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+:root {
+    --responsive-font: 1.83rem;
+}
+/* ---------const------------*/
+
+$bp-xlarge: 112.5em; //1800px
+$bp-largest: 75em; //1200px
+$bp-992: 61.875em; //990
+$bp-small: 52.25em; //900px
+$bp-xsmall: 37.5em; //600px
+$bp-380: 23.75em; //380
+$bp-340: 21.25em; //340
+$bp-290: 18.125em; //290
+/* ----xx-----const-------xx-----*/
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 56.25%;
+    }
+    @media only screen and (max-width: $bp-small) {
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+        // font-size: 48.75%;
+    }
+    @media only screen and (max-width: $bp-380) {
+        font-size: 44%;
+    }
+    @media only screen and (max-width: $bp-340) {
+        font-size: 42%;
+    }
+    @media only screen and (max-width: $bp-290) {
+        font-size: 35%;
+    }
+    @media only screen and (min-width: $bp-xlarge) {
+        font-size: 75%;
+    }
+}
+
+/*=================================================*/
+/*                 Typography                      */
+/*=================================================*/
+
+.app {
+    display: flex;
+    background: #F7F8FA;
+
+    &__content {
+        display: block;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

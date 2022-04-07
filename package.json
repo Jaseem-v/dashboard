@@ -1,0 +1,30 @@
+{
+  "name": "shop-reactt",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://jaseem-v.github.io/dashboard",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mantine/core": "^4.1.2",
+    "@mantine/hooks": "^4.1.2",
+    "@mantine/next": "^4.1.2",
+    "@mui/material": "^5.5.3",
+    "js-to-ts-converter": "^0.18.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.49.11",
+    "tabler-icons-react": "^1.44.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.9.0"
+  }
+}
